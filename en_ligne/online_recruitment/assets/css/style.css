@@ -1,0 +1,150 @@
+/* Style général inspiré de l'image fournie et de la page index.php */
+
+/* Corps de page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #007bff 0%, #ff7e5f 100%);
+    color: white;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    color: #555;
+    font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+.btn-inscription {
+    background-color: #00aaff;
+    color: white;
+    font-weight: 600;
+}
+.btn-inscription:hover {
+    background-color: #0088cc;
+    color: white;
+}
+
+/* Section Hero */
+.hero {
+    background: linear-gradient(rgba(0,123,255,0.6), rgba(255,123,123,0.6)), url('../images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 120px 15px 80px 15px;
+    text-align: center;
+    position: relative;
+}
+.hero h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.search-bar input, .search-bar select {
+    border-radius: 0;
+    height: 45px;
+    background-color: transparent !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.search-bar input::placeholder, .search-bar select {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+.search-bar input:focus, .search-bar select:focus {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    border-color: #007bff !important;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.75) !important;
+    outline: none !important;
+}
+.search-bar select option {
+    background-color: rgba(0,123,255,0.6) !important;
+    color: #fff !important;
+}
+.search-bar select {
+    background-color: transparent !important;
+    color: white !important;
+    box-shadow: none !important;
+}
+.search-bar .btn-search {
+    background-color: transparent !important;
+    color: white;
+    border-radius: 0;
+    height: 45px;
+    width: 60px;
+}
+.search-bar .btn-search:hover {
+    background-color: #0056b3;
+}
+
+/* Offres d'emploi récentes */
+.offers-section {
+    margin: 40px auto;
+    max-width: 1140px;
+}
+.offers-section h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.offer-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+}
+.offer-card h5 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.offer-card p {
+    flex-grow: 1;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.offer-details {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.offer-details li {
+    margin-bottom: 5px;
+}
+.offer-details strong {
+    font-weight: 600;
+}
+.btn-apply {
+    background-color: #00aaff;
+    border: none;
+    font-weight: 600;
+    margin-top: auto;
+}
+.btn-apply:hover {
+    background-color: #0088cc;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(rgba(10, 92, 179, 0.6));
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-bar .btn-search {
+        width: 100%;
+    }
+}
